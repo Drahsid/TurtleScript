@@ -1,0 +1,59 @@
+// rs [imm]
+JI 0xDEADBEEF // test
+JIE 0xDEADBEEFBEEFDEAD # test 2
+JR A0
+
+// rl, rr, rs [imm]
+JEI A0, A1, 0xDEADBEEF
+JEIE A0, A1, 0xDEADBEEFBEEFDEAD
+JER A0, A1, A2
+
+// rl, rr, rs [imm]
+JGI A0, A1, 0xDEADBEEF
+JGIE A0, A1, 0xDEADBEEFBEEFDEAD
+JGR A0, A1, A2
+
+// rs [imm]
+JFI 0xDEADBEEF
+JFIE 0xDEADBEEFBEEFDEAD
+JFR A2
+
+// rs [imm]
+JALI 0xDEADBEEF
+JALIE 0xDEADBEEFBEEFDEAD
+JALR A0
+
+// rl, rr, rs [imm]
+JELI A0, A1, 0xDEADBEEF
+JELIE A0, A1, 0xDEADBEEFBEEFDEAD
+JELR A0, A1, A2
+
+// rl, rr, rs [imm]
+JGLI A0, A1, 0xDEADBEEF
+JGLIE A0, A1, 0xDEADBEEFBEEFDEAD
+JGLR A0, A1, A2
+
+// rs [imm]
+JFLI 0xDEADBEEF
+JFLIE 0xDEADBEEFBEEFDEAD
+JFLR A2
+
+// rs [imm]
+BI 1
+BIE 1
+BR A2
+
+// rl, rr, rs [imm]
+BEI A0, A1, 1
+BEIE A0, A1, 1
+BER A0, A1, A2
+
+// rl, rr, rs [imm]
+BGI A0, A1, 1
+BGIE A0, A1, 1
+BGR A0, A1, A2
+
+// rs [imm]
+BFI 1
+BFIE 1
+BFR A0
